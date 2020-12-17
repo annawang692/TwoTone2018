@@ -1,0 +1,61 @@
+% analysis settings
+twotoneData.settings.fileAppendString = '.fitResult.mat';
+twotoneData.settings.imageSettings.twotoneVersion = '3.1.0alpha';
+twotoneData.settings.imageSettings.alternationPeriod = 2;
+twotoneData.settings.imageSettings.nChannel = 2;
+twotoneData.settings.imageSettings.channelName = {'Dem','Aem'};
+twotoneData.settings.imageSettings.channelImageLim= [[1,256,1,256];[257,512,1,256]];
+twotoneData.settings.imageSettings.nADetChannel= 3;
+twotoneData.settings.imageSettings.aDetChannelName={'DexDem', 'AexAem', 'DexAem' };
+twotoneData.settings.transformMatrixSettings.applyTform = 0;
+twotoneData.settings.transformMatrixSettings.channelLinkage= {[1,2]}; %specifies which channel the transform is from and to (in this case 1->2) ;
+twotoneData.settings.transformMatrixSettings.fileName= {''};
+twotoneData.settings.fitSettings.algorithm= 'fixedGauss'; %OR: 'fixedGaussEllipse','ring''freeGaussEllipse'
+twotoneData.settings.fitSettings.fitParamName= {'windowRadius','minWidth','maxWidth'};
+  %OR: 'innerCircleRadius','outerCircleRadius','ringTime'
+  %OR: 'windowRadius','minWidth','maxWidth','maxPositionChange'
+twotoneData.settings.fitSettings.param= [6, 1,2];
+twotoneData.settings.fretDataName = {'t_Dex','t_Aex','DD','DA','AD','AA','E','S'};
+  % OR {'t','D','A','E'} for CW
+twotoneData.settings.autoDetectSettings.averageFrameLim= [2, 10];
+twotoneData.settings.autoDetectSettings.bandPassKernelDiameter= 3;
+twotoneData.settings.autoDetectSettings.fitSubImageRadius= 3;
+twotoneData.settings.autoDetectSettings.thresholds =  [15,15, 10];
+  %OR  [15,15] for CW
+twotoneData.settings.autoDetectSettings.clusterDistanceThresh  = 3;
+twotoneData.settings.autoDetectSettings.nearestNeighbor.apply  = 0;
+twotoneData.settings.autoDetectSettings.nearestNeighbor.thresh = 6;
+twotoneData.settings.autoDetectSettings.ellipticity.apply  = 0;
+twotoneData.settings.autoDetectSettings.ellipticity.thresh = 0.6;
+twotoneData.settings.autoDetectSettings.PSFwidth.apply= 0;
+twotoneData.settings.autoDetectSettings.PSFwidth.lim= [1, 2];
+twotoneData.settings.autoDetectSettings.linkageFilter  = 'DexDem&&AexAem';
+  % OR: 'DexDem', 'AexAem','DexAem','DexDem&&AexAem', 'DexDem&&DexAem', 'AexAem&&DexAem', 'DexDem&&AexAem&&DexAem','DexDem||AexAem||DexAem', 'DexDem||AexAem'
+
+% analysis results
+twotoneData.results.movieInfo.path: ''
+twotoneData.results.movieInfo.name: 't1b18_scan1-g2r1_001.fits'
+twotoneData.results.movieInfo.imageInfo: [1x1 struct] for fits files, [nFrame x1 struct] for tif files
+twotoneData.results.movieInfo.firstGreenFrame: 2
+twotoneData.results.analysisDate: '101110'
+twotoneData.results.aDetImages: {[256x256 int16]  [256x256 int16]  [256x256 int16]}
+twotoneData.results.aDetParamName: {'amplitude'  'sx'  'sy'  'eccentricity'}
+twotoneData.results.transformMatrix.tform = {TFORM1} %allows storage of multiple tforms ie for 3color alex
+twotoneData.results.aDetMolPositions.included = 
+    [Nx2 double]    [Nx2 double]    [Nx2 double]
+twotoneData.results.aDetMolPositions.excluded = 
+    [Mx2 double]    [Mx2 double]    [Mx2 double]
+twotoneData.results.fitParamName: {'A0'  'sx'  'sy'  'BG'  'X'  'Y'  'theta'}
+
+twotoneData.results.data: [NNx1 ] %data is an array containing all analysed molecules - one for each molecule
+
+%autodetection results are output for each autodetection channel, (1 per column). the order is defined by twotoneData.settings.imageSettings.aDetChannelName
+twotoneData.results.data(NN).aDetData.aDetPos: [3x2 double] 
+twotoneData.results.data(NN).aDetData.aDetPos.aDetParam: [3x4 double] %param names are defined by twotoneData.results.aDetParamName
+twotoneData.results.data(NN).aDetData.nearestNeighborDist: 2.0024
+twotoneData.results.data(NN).aDetData.nParticle: [3x1 double]
+
+twotoneData.results.data(NN).intensity[nFRAME x nEmissionChannel] % photon counts in each emission channel. Order defined by twotoneData.settings.imageSettings.channelName 
+twotoneData.results.data(NN).fitParam{nEmissionChannel}[nFrame x nFitParam] % cell containing fitting parameters for each emission channel. Order defined by twotoneData.settings.imageSettings.channelName and twotoneData.results.fitParamName
+twotoneData.results.data(NN).fretData[nAlternationPeriod x nFretParam] % fret data, order defined by   twotoneData.settings.fretDataName
+

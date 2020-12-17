@@ -1,0 +1,260 @@
+ fits_write_image
+
+ Timestamp is 4cd86a40 (Mon Nov 08 21:23:12 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000167aH .text                   CODE
+ 0002:00000000 00000124H .idata$5                DATA
+ 0002:00000124 00000004H .CRT$XCA                DATA
+ 0002:00000128 00000004H .CRT$XCZ                DATA
+ 0002:0000012c 00000004H .CRT$XIA                DATA
+ 0002:00000130 00000004H .CRT$XIAA               DATA
+ 0002:00000134 00000004H .CRT$XIC                DATA
+ 0002:00000138 00000004H .CRT$XIZ                DATA
+ 0002:00000140 00000500H .rdata                  DATA
+ 0002:00000640 00000004H .rdata$sxdata           DATA
+ 0002:00000644 00000004H .rtc$IAA                DATA
+ 0002:00000648 00000004H .rtc$IZZ                DATA
+ 0002:0000064c 00000004H .rtc$TAA                DATA
+ 0002:00000650 00000004H .rtc$TZZ                DATA
+ 0002:00000658 00000084H .xdata$x                DATA
+ 0002:000006dc 00000064H .idata$2                DATA
+ 0002:00000740 00000014H .idata$3                DATA
+ 0002:00000754 00000124H .idata$4                DATA
+ 0002:00000878 0000047aH .idata$6                DATA
+ 0002:00000d00 00000056H .edata                  DATA
+ 0003:00000000 00000018H .data                   DATA
+ 0003:00000018 00000354H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       _mexFunction               10001000 f   fits_write_image.obj
+ 0001:00000110       _mfitsio_write_image_execute 10001110 f   mfitsio.obj
+ 0001:000002b0       _mfitsio_calc_info         100012b0 f   mfitsio.obj
+ 0001:000003b0       _mfitsio_forbidden         100013b0 f   mfitsio.obj
+ 0001:00000470       _mfitsio_write_header      10001470 f   mfitsio.obj
+ 0001:00000990       _mfitsio_write_image_impl  10001990 f   mfitsio.obj
+ 0001:00000ab0       _mfitsio_write_image       10001ab0 f   mfitsio.obj
+ 0001:00000b9a       _mxCreateStructArray_700   10001b9a f   libmx:libmx.dll
+ 0001:00000ba0       _mxGetClassID              10001ba0 f   libmx:libmx.dll
+ 0001:00000ba6       _mxGetString_700           10001ba6 f   libmx:libmx.dll
+ 0001:00000bac       _mxCalloc                  10001bac f   libmx:libmx.dll
+ 0001:00000bb2       _mxGetN                    10001bb2 f   libmx:libmx.dll
+ 0001:00000bb8       _mxGetM                    10001bb8 f   libmx:libmx.dll
+ 0001:00000bbe       _mxIsChar                  10001bbe f   libmx:libmx.dll
+ 0001:00000bc4       _mxGetData                 10001bc4 f   libmx:libmx.dll
+ 0001:00000bca       _mxGetDimensions_700       10001bca f   libmx:libmx.dll
+ 0001:00000bd0       _mxGetNumberOfDimensions_700 10001bd0 f   libmx:libmx.dll
+ 0001:00000bd6       _mxGetField_700            10001bd6 f   libmx:libmx.dll
+ 0001:00000bdc       _mxGetScalar               10001bdc f   libmx:libmx.dll
+ 0001:00000be2       _mxGetFieldNameByNumber    10001be2 f   libmx:libmx.dll
+ 0001:00000be8       _mxGetNumberOfFields       10001be8 f   libmx:libmx.dll
+ 0001:00000bee       _mexErrMsgTxt              10001bee f   libmex:libmex.dll
+ 0001:00000bf4       _mexPrintf                 10001bf4 f   libmex:libmex.dll
+ 0001:00000bfa       _mexWarnMsgTxt             10001bfa f   libmex:libmex.dll
+ 0001:00000c00       _ffclos                    10001c00 f   cfitsio:cfitsio.dll
+ 0001:00000c06       _ffopentest                10001c06 f   cfitsio:cfitsio.dll
+ 0001:00000c0c       _ffpssk                    10001c0c f   cfitsio:cfitsio.dll
+ 0001:00000c12       _ffpssuk                   10001c12 f   cfitsio:cfitsio.dll
+ 0001:00000c18       _ffpssi                    10001c18 f   cfitsio:cfitsio.dll
+ 0001:00000c1e       _ffpssui                   10001c1e f   cfitsio:cfitsio.dll
+ 0001:00000c24       _ffpssb                    10001c24 f   cfitsio:cfitsio.dll
+ 0001:00000c2a       _ffpssd                    10001c2a f   cfitsio:cfitsio.dll
+ 0001:00000c30       _ffpsse                    10001c30 f   cfitsio:cfitsio.dll
+ 0001:00000c36       _ffuky                     10001c36 f   cfitsio:cfitsio.dll
+ 0001:00000c3c       _ffmahd                    10001c3c f   cfitsio:cfitsio.dll
+ 0001:00000c42       _ffukls                    10001c42 f   cfitsio:cfitsio.dll
+ 0001:00000c48       _ffplsw                    10001c48 f   cfitsio:cfitsio.dll
+ 0001:00000c4e       _ffcrim                    10001c4e f   cfitsio:cfitsio.dll
+ 0001:00000c54       _ffinit                    10001c54 f   cfitsio:cfitsio.dll
+ 0001:00000c5a       _ffrsim                    10001c5a f   cfitsio:cfitsio.dll
+ 0001:00000c60       @__security_check_cookie@4 10001c60 f   MSVCRT:secchk.obj
+ 0001:00000c70       __ftol2_sse                10001c70 f   MSVCRT:ftol2.obj
+ 0001:00000c79       __ftol2_pentium4           10001c79 f   MSVCRT:ftol2.obj
+ 0001:00000c8c       __ftol2_sse_excpt          10001c8c f   MSVCRT:ftol2.obj
+ 0001:00000ca6       __ftol2                    10001ca6 f   MSVCRT:ftol2.obj
+ 0001:00000d6a       __CRT_INIT@12              10001d6a f   MSVCRT:crtdll.obj
+ 0001:000010a6       __DllMainCRTStartup@12     100020a6 f   MSVCRT:crtdll.obj
+ 0001:000010c9       ___report_gsfailure        100020c9 f   MSVCRT:gs_report.obj
+ 0001:0000121f       __get_sse2_info            1000221f f   MSVCRT:cpu_disp.obj
+ 0001:00001281       ___sse2_available_init     10002281 f   MSVCRT:cpu_disp.obj
+ 0001:0000128e       ___clean_type_info_names   1000228e f   MSVCRT:tncleanup.obj
+ 0001:0000129a       __onexit                   1000229a f   MSVCRT:atonexit.obj
+ 0001:0000133f       _atexit                    1000233f f   MSVCRT:atonexit.obj
+ 0001:00001356       __RTC_Initialize           10002356 f   MSVCRT:_initsect_.obj
+ 0001:0000137c       __RTC_Terminate            1000237c f   MSVCRT:_initsect_.obj
+ 0001:000013b0       __ValidateImageBase        100023b0 f   MSVCRT:pesect.obj
+ 0001:000013f0       __FindPESection            100023f0 f   MSVCRT:pesect.obj
+ 0001:00001440       __IsNonwritableInCurrentImage 10002440 f   MSVCRT:pesect.obj
+ 0001:000014fe       __initterm                 100024fe f   MSVCRT:MSVCR90.dll
+ 0001:00001504       __initterm_e               10002504 f   MSVCRT:MSVCR90.dll
+ 0001:0000150a       __amsg_exit                1000250a f   MSVCRT:MSVCR90.dll
+ 0001:00001510       ___CppXcptFilter           10002510 f   MSVCRT:MSVCR90.dll
+ 0001:00001516       _DllMain@12                10002516 f   MSVCRT:dllmain.obj
+ 0001:0000153c       __SEH_prolog4              1000253c f   MSVCRT:sehprolg4.obj
+ 0001:00001581       __SEH_epilog4              10002581 f   MSVCRT:sehprolg4.obj
+ 0001:00001595       __except_handler4          10002595 f   MSVCRT:chandler4gs.obj
+ 0001:000015ba       ___security_init_cookie    100025ba f   MSVCRT:gs_support.obj
+ 0001:00001650       __crt_debugger_hook        10002650 f   MSVCRT:MSVCR90.dll
+ 0001:00001656       ___clean_type_info_names_internal 10002656 f   MSVCRT:MSVCR90.dll
+ 0001:0000165c       __unlock                   1000265c f   MSVCRT:MSVCR90.dll
+ 0001:00001662       ___dllonexit               10002662 f   MSVCRT:MSVCR90.dll
+ 0001:00001668       __lock                     10002668 f   MSVCRT:MSVCR90.dll
+ 0001:0000166e       __except_handler4_common   1000266e f   MSVCRT:MSVCR90.dll
+ 0001:00001674       __access                   10002674 f   MSVCRT:MSVCR90.dll
+ 0001:00001674       _access                    10002674 f   MSVCRT:MSVCR90.dll
+ 0002:00000000       __imp__DisableThreadLibraryCalls@4 10003000     kernel32:KERNEL32.dll
+ 0002:00000004       __imp__Sleep@4             10003004     kernel32:KERNEL32.dll
+ 0002:00000008       __imp__GetSystemTimeAsFileTime@4 10003008     kernel32:KERNEL32.dll
+ 0002:0000000c       __imp__GetCurrentProcessId@0 1000300c     kernel32:KERNEL32.dll
+ 0002:00000010       __imp__GetCurrentThreadId@0 10003010     kernel32:KERNEL32.dll
+ 0002:00000014       __imp__GetTickCount@0      10003014     kernel32:KERNEL32.dll
+ 0002:00000018       __imp__QueryPerformanceCounter@4 10003018     kernel32:KERNEL32.dll
+ 0002:0000001c       __imp__InterlockedExchange@8 1000301c     kernel32:KERNEL32.dll
+ 0002:00000020       __imp__IsDebuggerPresent@0 10003020     kernel32:KERNEL32.dll
+ 0002:00000024       __imp__SetUnhandledExceptionFilter@4 10003024     kernel32:KERNEL32.dll
+ 0002:00000028       __imp__UnhandledExceptionFilter@4 10003028     kernel32:KERNEL32.dll
+ 0002:0000002c       __imp__GetCurrentProcess@0 1000302c     kernel32:KERNEL32.dll
+ 0002:00000030       __imp__TerminateProcess@8  10003030     kernel32:KERNEL32.dll
+ 0002:00000034       __imp__InterlockedCompareExchange@12 10003034     kernel32:KERNEL32.dll
+ 0002:00000038       \177KERNEL32_NULL_THUNK_DATA 10003038     kernel32:KERNEL32.dll
+ 0002:0000003c       __imp___access             1000303c     MSVCRT:MSVCR90.dll
+ 0002:00000040       __imp___except_handler4_common 10003040     MSVCRT:MSVCR90.dll
+ 0002:00000044       __imp___onexit             10003044     MSVCRT:MSVCR90.dll
+ 0002:00000048       __imp___lock               10003048     MSVCRT:MSVCR90.dll
+ 0002:0000004c       __imp____dllonexit         1000304c     MSVCRT:MSVCR90.dll
+ 0002:00000050       __imp___unlock             10003050     MSVCRT:MSVCR90.dll
+ 0002:00000054       __imp____clean_type_info_names_internal 10003054     MSVCRT:MSVCR90.dll
+ 0002:00000058       __imp___crt_debugger_hook  10003058     MSVCRT:MSVCR90.dll
+ 0002:0000005c       __imp____CppXcptFilter     1000305c     MSVCRT:MSVCR90.dll
+ 0002:00000060       __imp___adjust_fdiv        10003060     MSVCRT:MSVCR90.dll
+ 0002:00000064       __imp___initterm_e         10003064     MSVCRT:MSVCR90.dll
+ 0002:00000068       __imp___initterm           10003068     MSVCRT:MSVCR90.dll
+ 0002:0000006c       __imp___decode_pointer     1000306c     MSVCRT:MSVCR90.dll
+ 0002:00000070       __imp___encoded_null       10003070     MSVCRT:MSVCR90.dll
+ 0002:00000074       __imp___malloc_crt         10003074     MSVCRT:MSVCR90.dll
+ 0002:00000078       __imp___encode_pointer     10003078     MSVCRT:MSVCR90.dll
+ 0002:0000007c       __imp__strncmp             1000307c     MSVCRT:MSVCR90.dll
+ 0002:00000080       __imp___amsg_exit          10003080     MSVCRT:MSVCR90.dll
+ 0002:00000084       __imp__calloc              10003084     MSVCRT:MSVCR90.dll
+ 0002:00000088       __imp__free                10003088     MSVCRT:MSVCR90.dll
+ 0002:0000008c       __imp__malloc              1000308c     MSVCRT:MSVCR90.dll
+ 0002:00000090       \177MSVCR90_NULL_THUNK_DATA 10003090     MSVCRT:MSVCR90.dll
+ 0002:00000094       __imp__ffpssd              10003094     cfitsio:cfitsio.dll
+ 0002:00000098       __imp__ffpsse              10003098     cfitsio:cfitsio.dll
+ 0002:0000009c       __imp__ffuky               1000309c     cfitsio:cfitsio.dll
+ 0002:000000a0       __imp__ffmahd              100030a0     cfitsio:cfitsio.dll
+ 0002:000000a4       __imp__ffukls              100030a4     cfitsio:cfitsio.dll
+ 0002:000000a8       __imp__ffplsw              100030a8     cfitsio:cfitsio.dll
+ 0002:000000ac       __imp__ffcrim              100030ac     cfitsio:cfitsio.dll
+ 0002:000000b0       __imp__ffinit              100030b0     cfitsio:cfitsio.dll
+ 0002:000000b4       __imp__ffrsim              100030b4     cfitsio:cfitsio.dll
+ 0002:000000b8       __imp__ffpssb              100030b8     cfitsio:cfitsio.dll
+ 0002:000000bc       __imp__ffpssui             100030bc     cfitsio:cfitsio.dll
+ 0002:000000c0       __imp__ffpssi              100030c0     cfitsio:cfitsio.dll
+ 0002:000000c4       __imp__ffpssuk             100030c4     cfitsio:cfitsio.dll
+ 0002:000000c8       __imp__ffpssk              100030c8     cfitsio:cfitsio.dll
+ 0002:000000cc       __imp__ffopentest          100030cc     cfitsio:cfitsio.dll
+ 0002:000000d0       __imp__ffclos              100030d0     cfitsio:cfitsio.dll
+ 0002:000000d4       \177cfitsio_NULL_THUNK_DATA 100030d4     cfitsio:cfitsio.dll
+ 0002:000000d8       __imp__mexWarnMsgTxt       100030d8     libmex:libmex.dll
+ 0002:000000dc       __imp__mexPrintf           100030dc     libmex:libmex.dll
+ 0002:000000e0       __imp__mexErrMsgTxt        100030e0     libmex:libmex.dll
+ 0002:000000e4       \177libmex_NULL_THUNK_DATA 100030e4     libmex:libmex.dll
+ 0002:000000e8       __imp__mxGetNumberOfFields 100030e8     libmx:libmx.dll
+ 0002:000000ec       __imp__mxGetFieldNameByNumber 100030ec     libmx:libmx.dll
+ 0002:000000f0       __imp__mxGetScalar         100030f0     libmx:libmx.dll
+ 0002:000000f4       __imp__mxGetField_700      100030f4     libmx:libmx.dll
+ 0002:000000f8       __imp__mxGetNumberOfDimensions_700 100030f8     libmx:libmx.dll
+ 0002:000000fc       __imp__mxGetDimensions_700 100030fc     libmx:libmx.dll
+ 0002:00000100       __imp__mxGetData           10003100     libmx:libmx.dll
+ 0002:00000104       __imp__mxIsChar            10003104     libmx:libmx.dll
+ 0002:00000108       __imp__mxGetM              10003108     libmx:libmx.dll
+ 0002:0000010c       __imp__mxGetN              1000310c     libmx:libmx.dll
+ 0002:00000110       __imp__mxCalloc            10003110     libmx:libmx.dll
+ 0002:00000114       __imp__mxGetString_700     10003114     libmx:libmx.dll
+ 0002:00000118       __imp__mxGetClassID        10003118     libmx:libmx.dll
+ 0002:0000011c       __imp__mxCreateStructArray_700 1000311c     libmx:libmx.dll
+ 0002:00000120       \177libmx_NULL_THUNK_DATA  10003120     libmx:libmx.dll
+ 0002:00000124       ___xc_a                    10003124     MSVCRT:cinitexe.obj
+ 0002:00000128       ___xc_z                    10003128     MSVCRT:cinitexe.obj
+ 0002:0000012c       ___xi_a                    1000312c     MSVCRT:cinitexe.obj
+ 0002:00000138       ___xi_z                    10003138     MSVCRT:cinitexe.obj
+ 0002:00000140       ??_C@_05KPCHOGAE@_nil_?$AA@ 10003140     fits_write_image.obj
+ 0002:00000148       ??_C@_0CH@LKNAKMCG@The?5header?5must?5be?5a?51x1?5struct?5@ 10003148     fits_write_image.obj
+ 0002:00000170       ??_C@_0CO@CKGKEEDO@Input?5must?5be?5a?5row?5vector?5strin@ 10003170     fits_write_image.obj
+ 0002:000001a0       ??_C@_0CD@DOCBADAC@Input?5must?5be?5a?5string?5?$CIfilename@ 100031a0     fits_write_image.obj
+ 0002:000001c4       ??_C@_0BL@NDNCOJLA@Too?5many?5output?5arguments?4?$AA@ 100031c4     fits_write_image.obj
+ 0002:000001e0       ??_C@_0BO@LLMAHLA@At?5least?5two?5inputs?5required?4?$AA@ 100031e0     fits_write_image.obj
+ 0002:00000200       ??_C@_0BG@KMMLLNDI@Could?5not?5close?5file?4?$AA@ 10003200     mfitsio.obj
+ 0002:00000218       __real@400a000000000000    10003218     mfitsio.obj
+ 0002:00000220       ??_C@_0BB@LLPCOBGM@Cannot?5continue?4?$AA@ 10003220     mfitsio.obj
+ 0002:00000234       ??_C@_0CF@FFAPFHLO@51?5Unsupported?5data?5type?5for?5ima@ 10003234     mfitsio.obj
+ 0002:0000025c       ??_C@_06JCOHBIMP@BITPIX?$AA@ 1000325c     mfitsio.obj
+ 0002:00000264       ??_C@_05POJINLCM@NAXIS?$AA@ 10003264     mfitsio.obj
+ 0002:0000026c       ??_C@_0CM@GKPGPCCB@32?5Unsupported?5data?5type?5for?5hea@ 1000326c     mfitsio.obj
+ 0002:00000298       ??_C@_06MHBJNELB@SIMPLE?$AA@ 10003298     mfitsio.obj
+ 0002:000002a0       ??_C@_0BJ@MJKKDHBH@Could?5not?5access?5header?4?$AA@ 100032a0     mfitsio.obj
+ 0002:000002bc       ??_C@_0CB@JEHFNGHO@Could?5not?5open?5file?5for?5writing?4@ 100032bc     mfitsio.obj
+ 0002:000002e0       ??_C@_0BK@EPCLCAPB@28?5An?5error?5occurred?3?5?$CFd?6?$AA@ 100032e0     mfitsio.obj
+ 0002:000002fc       ??_C@_0BF@EOCDIPDJ@Could?5not?5write?5key?4?$AA@ 100032fc     mfitsio.obj
+ 0002:00000314       ??_C@_0DP@NBLBDHKJ@27?5An?5error?5occurred?3?5?$CFd?6?4?5Could@ 10003314     mfitsio.obj
+ 0002:00000354       ??_C@_0DB@BNMGNPLP@25?5Unsupported?5data?5type?5for?5hea@ 10003354     mfitsio.obj
+ 0002:00000388       ??_C@_0CE@MHDOCPDL@A?5header?5field?5will?5not?5be?5writt@ 10003388     mfitsio.obj
+ 0002:000003b0       ??_C@_0HC@IECGEFGB@26?5There?5exists?5a?5non?9singleton?5@ 100033b0     mfitsio.obj
+ 0002:00000424       ??_C@_0BK@JIJNPJLN@24?5An?5error?5occurred?3?5?$CFd?6?$AA@ 10003424     mfitsio.obj
+ 0002:00000440       ??_C@_0BK@FGMNAFBF@23?5An?5error?5occurred?3?5?$CFd?6?$AA@ 10003440     mfitsio.obj
+ 0002:0000045c       ??_C@_0CH@PIINMKJM@Could?5not?5write?5information?5to?5h@ 1000345c     mfitsio.obj
+ 0002:00000484       ??_C@_0BK@PDEGJFBL@22?5An?5error?5occurred?3?5?$CFd?6?$AA@ 10003484     mfitsio.obj
+ 0002:000004a0       ??_C@_0DA@CNJCACKJ@Could?5not?5create?5an?5image?5within@ 100034a0     mfitsio.obj
+ 0002:000004d0       ??_C@_0BK@MGKLCDEI@21?5An?5error?5occurred?3?5?$CFd?6?$AA@ 100034d0     mfitsio.obj
+ 0002:000004ec       ??_C@_0CA@MJFHNLIM@Could?5not?5create?5new?5FITS?5file?4?$AA@ 100034ec     mfitsio.obj
+ 0002:0000050c       ??_C@_0BK@GDCALDEG@20?5An?5error?5occurred?3?5?$CFd?6?$AA@ 1000350c     mfitsio.obj
+ 0002:00000528       ??_C@_0BK@NLNBGGI@39?5An?5error?5occurred?3?5?$CFd?6?$AA@ 10003528     mfitsio.obj
+ 0002:00000544       ??_C@_0CM@KNJODLJO@Could?5not?5write?5the?5image?5to?5the@ 10003544     mfitsio.obj
+ 0002:00000570       ??_C@_0BK@MPEBIEEL@15?5An?5error?5occurred?3?5?$CFd?6?$AA@ 10003570     mfitsio.obj
+ 0002:0000058c       ??_C@_0CC@MHDPCFHP@Could?5not?5resize?5FITS?5file?5image@ 1000358c     mfitsio.obj
+ 0002:000005b0       ??_C@_0BK@GKMKBEEF@14?5An?5error?5occurred?3?5?$CFd?6?$AA@ 100035b0     mfitsio.obj
+ 0002:000005cc       ??_C@_0BK@KEJKOION@13?5An?5error?5occurred?3?5?$CFd?6?$AA@ 100035cc     mfitsio.obj
+ 0002:000005e8       __pRawDllMain              100035e8     MSVCRT:crtdll.obj
+ 0002:000005e8       __pDefaultRawDllMain       100035e8     MSVCRT:crtdll.obj
+ 0002:000005f8       __load_config_used         100035f8     MSVCRT:loadcfg.obj
+ 0002:00000640       ___safe_se_handler_table   10003640     <linker-defined>
+ 0002:00000644       ___rtc_iaa                 10003644     MSVCRT:_initsect_.obj
+ 0002:00000648       ___rtc_izz                 10003648     MSVCRT:_initsect_.obj
+ 0002:0000064c       ___rtc_taa                 1000364c     MSVCRT:_initsect_.obj
+ 0002:00000650       ___rtc_tzz                 10003650     MSVCRT:_initsect_.obj
+ 0002:000006dc       __IMPORT_DESCRIPTOR_libmx  100036dc     libmx:libmx.dll
+ 0002:000006f0       __IMPORT_DESCRIPTOR_libmex 100036f0     libmex:libmex.dll
+ 0002:00000704       __IMPORT_DESCRIPTOR_cfitsio 10003704     cfitsio:cfitsio.dll
+ 0002:00000718       __IMPORT_DESCRIPTOR_MSVCR90 10003718     MSVCRT:MSVCR90.dll
+ 0002:0000072c       __IMPORT_DESCRIPTOR_KERNEL32 1000372c     kernel32:KERNEL32.dll
+ 0002:00000740       __NULL_IMPORT_DESCRIPTOR   10003740     libmx:libmx.dll
+ 0003:00000000       ___security_cookie         10004000     MSVCRT:gs_cookie.obj
+ 0003:00000004       ___security_cookie_complement 10004004     MSVCRT:gs_cookie.obj
+ 0003:00000010       ___native_dllmain_reason   10004010     MSVCRT:natstart.obj
+ 0003:00000014       ___native_vcclrit_reason   10004014     MSVCRT:natstart.obj
+ 0003:00000344       __forceCRTManifestRTM      10004344     MSVCRT:crtmanifestrtm.obj
+ 0003:00000348       ?__type_info_root_node@@3U__type_info_node@@A 10004348     MSVCRT:tncleanup.obj
+ 0003:00000350       __adjust_fdiv              10004350     <common>
+ 0003:00000354       ___native_startup_state    10004354     <common>
+ 0003:00000358       ___native_startup_lock     10004358     <common>
+ 0003:0000035c       ___onexitend               1000435c     <common>
+ 0003:00000360       ___onexitbegin             10004360     <common>
+ 0003:00000364       ___sse2_available          10004364     <common>
+ 0003:00000368       ___dyn_tls_init_callback   10004368     <common>
+
+ entry point at        0001:000010a6
+
+ Static symbols
+
+ 0001:00000d1b       _pre_c_init                10001d1b f   MSVCRT:crtdll.obj
+ 0001:00000f90       ___DllMainCRTStartup       10001f90 f   MSVCRT:crtdll.obj
+ 0001:000011cf       _has_osfxsr_set            100021cf f   MSVCRT:cpu_disp.obj

@@ -1,0 +1,14 @@
+mfitsio2Install
+
+For developer: 
+
+Windows MATLAB R2010
+
+Install microsoft visual c++ 2008 express edition (NB must be 2008!).
+Run compilescript from the matlab command line
+
+Linux
+1. run
+# apt-get install libcfitsio3 libcfitsio3-dev
+Run compilescript from the matlab command line
+
